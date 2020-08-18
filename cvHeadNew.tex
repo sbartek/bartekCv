@@ -44,27 +44,7 @@
 \newfontfamily{\liningmain}[Ligatures={Common,TeX},Numbers=Lining]{Kurier}
 \setsansfont[Ligatures={Common,TeX},Numbers={Lining,Proportional}]{Kurier}
 
-% % A trick for extracting the family information
-% % which works independently of the chosen font
-% \begingroup
-%   \def\getfamily#1#2#3#4#5{#4}
-%   \edef\x{\endgroup
-%   \def\noexpand\liningdefault{\expandafter\expandafter\expandafter
-%     \getfamily\csname liningmain \endcsname}}\x
 
-% \DeclareSymbolFont{liningmath}{\encodingdefault}{\liningdefault}{m}{n}
-% \DeclareSymbolFontAlphabet{\mathlining}{liningmath}
-% \Umathcode`0="7 \symliningmath `0
-% \Umathcode`1="7 \symliningmath `1
-% \Umathcode`2="7 \symliningmath `2
-% \Umathcode`3="7 \symliningmath `3
-% \Umathcode`4="7 \symliningmath `4
-% \Umathcode`5="7 \symliningmath `5
-% \Umathcode`6="7 \symliningmath `6
-% \Umathcode`7="7 \symliningmath `7
-% \Umathcode`8="7 \symliningmath `8
-% \Umathcode`9="7 \symliningmath `9
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage[hidelinks]{hyperref}
 
@@ -221,8 +201,7 @@
     at (0,0.4) {\includegraphics[height={#2}]{#1}};
   \end{tikzpicture}}
 
-% itemindent=5pt, listparindent=0pt, , ,
-%%% Local Variables: 
+%%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "proyecto_lamt"
-%%% End: 
+%%% End:
